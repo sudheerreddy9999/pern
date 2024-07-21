@@ -1,10 +1,10 @@
 const express = require('express');
 const pool = require('../db');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken'); // Import jsonwebtoken
+const jwt = require('jsonwebtoken'); 
 const router = express.Router();
 
-const JWT_SECRET = 'your_jwt_secret'; // Replace with your secret
+const JWT_SECRET = 'your_jwt_secret'; 
 
 // Signup route
 router.post('/signup', async (req, res) => {
